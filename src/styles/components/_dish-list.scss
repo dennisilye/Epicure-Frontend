@@ -1,0 +1,20 @@
+.dish-list.small-chef-list {
+  max-width: 400px;
+  margin-left: 40px;
+}
+
+.dish-list {
+  @include for-mobile-layout {
+    margin-left: 30px;
+    width: 100%;
+  }
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.chef-res-list {
+  max-width: 640px;
+}

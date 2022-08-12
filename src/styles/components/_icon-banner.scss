@@ -1,0 +1,46 @@
+.icon-banner {
+  background-color: $light-grey;
+  margin-top: 90px;
+  max-width: 1440px;
+  width: 100%;
+
+  .banner-container {
+    max-width: 920px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 265px;
+
+    .banner-title {
+      @include for-mobile-layout {
+        font-size: 1.2rem;
+      }
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    .icon-container {
+      max-width: 1440px;
+      width: 100%;
+      img {
+        @include for-mobile-layout {
+          width: 44px;
+          height: 34px;
+        }
+        max-width: 80px;
+        max-height: 60px;
+      }
+      @include for-mobile-layout {
+        gap: 60px;
+      }
+      gap: 110px;
+      div {
+        @include for-mobile-layout {
+          gap: 15px;
+        }
+        gap: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+footer {
+  background-color: $light-grey;
+  max-width: 1440px;
+  max-width: 100%;
+
+  .footer-content {
+    max-width: 1000px;
+    width: 100%;
+    gap: 180px;
+    @include for-mobile-layout {
+      gap: 30px;
+      .footer-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        p {
+          max-width: 300px;
+        }
+      }
+      .downloads-container {
+        justify-content: center !important;
+      }
+    }
+
+    .footer-about-us {
+      @include for-mobile-layout {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-size: 1.3rem;
+      }
+      font-size: 1.8rem;
+      padding-top: 60px;
+      padding-bottom: 20px;
+    }
+    p {
+      @include for-mobile-layout {
+        font-size: 1.2rem;
+        margin-block-end: 30px;
+      }
+      font-size: 1.4rem;
+      max-width: 550px;
+      margin-block-end: 10px;
+    }
+    .logo {
+      @include for-mobile-layout {
+        max-width: 140px;
+        max-height: 130px;
+      }
+      width: 180px;
+      height: 170px;
+      background-blend-mode: multiply;
+      margin-bottom: 40px;
+    }
+    .downloads-container {
+      justify-content: start;
+      gap: 20px;
+      margin-top: 1em;
+      margin-bottom: 3em;
+      .download-container {
+        @include for-mobile-layout {
+          width: 140px;
+        }
+        width: 200px;
+        border: 1px solid black;
+        border-radius: 12px;
+        padding: 3px;
+        text-align: center;
+
+        .download-text {
+          @include for-mobile-layout {
+            margin-inline-start: 10px;
+          }
+          margin-inline-start: 20px;
+         
+          p {
+            @include for-mobile-layout {
+              font-size: 0.8rem;
+            }
+            margin: 0;
+            font-size: 1.1rem;
+          }
+          span {
+            @include for-mobile-layout {
+              font-size: 1rem;
+              
+            }
+            font-size: 1.3rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

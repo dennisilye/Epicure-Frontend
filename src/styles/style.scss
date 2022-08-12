@@ -1,0 +1,30 @@
+// Setup
+@import "./setup/functions";
+@import "./setup/mixins";
+@import "./setup/typography";
+@import "./setup/variables";
+@import "./setup/animations";
+
+// Basics
+@import "./basics/base";
+@import "./basics/helpers";
+@import "./basics/layout";
+
+// Components
+@import "./components/loader";
+@import "./components/main-header";
+@import "./components//main-footer";
+@import "./components/filter";
+@import "./components/dish-list";
+@import "./components/dish-preview";
+@import "./components/icon-banner";
+@import "./components/chef-of-the-week";
+@import "./components/small-footer";
+@import "./components/input";
+@import "./components/mobile/hero-buttons";
+@import "./components/dish-modal";
+
+// Pages
+@import "./pages/home";
+@import "./pages/restaurants";
+@import "./pages/res-details";

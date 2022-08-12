@@ -1,0 +1,59 @@
+.res-page {
+  animation: 1s slideInFromLeft;
+  min-height: calc(100vh - 160px);
+  .filter-links {
+    @include for-mobile-layout {
+      gap: 1.2em;
+    }
+    gap: 2.2em;
+    margin-bottom: 35px;
+    margin-top: 45px;
+    a {
+      @include for-mobile-layout {
+        font-size: 1rem;
+      }
+      font-size: 1.4rem;
+    }
+  }
+  .active {
+    border-bottom: 1px solid $pumpkin;
+  }
+  .res-page-title {
+    @include for-mobile-layout {
+      display: block;
+      margin-top: 20px;
+    }
+    text-align: center;
+    display: none;
+    h1 {
+      font-size: 1.4rem;
+    }
+  }
+}
+.res-page-list.dish-list {
+  margin-left: 0;
+  @include for-mobile-layout {
+    gap: 15px;
+    .card-container {
+      max-width: 160px;
+      max-height: 190px;
+      margin-bottom: 30px;
+      .item-card {
+        .card-secondary-title {
+          font-size: 1.2rem;
+        }
+        h2 {
+          font-size: 1rem;
+        }
+        .res-img {
+          max-width: 160px;
+          max-height: 120px;
+        }
+      }
+    }
+  }
+  // Calc for footer to stick to bottom
+  // @include for-mobile-layout {
+  //   min-height: calc(100vh - 220px);
+  // }
+}

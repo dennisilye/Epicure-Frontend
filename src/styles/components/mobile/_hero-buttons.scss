@@ -1,0 +1,16 @@
+.hero-buttons-container {
+  @include for-mobile-layout {
+    display: flex;
+  }
+  display: none;
+  background-color: $light-grey;
+  height: 125px;
+  gap: 20px;
+  .hero-btn {
+    font-size: 1em;
+    font-family: HelveticaNeue;
+    background-color: $sand-80;
+    padding: 10px 15px;
+    opacity: 0.8;
+  }
+}
